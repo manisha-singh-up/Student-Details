@@ -1,0 +1,36 @@
+
+<p id="notice"><%= notice %></p>
+<div style = "position: absolute;top: 25%;left: 50%; border-style: groove;border-color: blue; text-align: center;">
+<p>
+   <%= image_tag "std.JPG" %>
+</p>
+
+<p>
+  <strong>SCHOOL_NAME</strong>
+</p>
+
+<p>
+   <%= link_to image_tag(@student.image.url(:med)), @student.image.url %>
+</p>
+
+<p>
+  <%= @student.name.upcase%>
+</p>
+
+<p>
+  <strong>Roll No:</strong>
+  <%= @student.roll_no %>
+</p>
+<p>
+  <strong>Blood Group:</strong>
+  <%= @student.blood_group%>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @student.department%>
+</p>
+
+</div>
+
+<%= link_to 'Back', students_path%>
